@@ -1,0 +1,18 @@
+[package]
+name = "kymdb"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-recursion = "1.1.1"
+color-eyre = "0.6.3"
+dashmap = { version = "5.5.3", features = ["serde"] }
+futures = "0.3.30"
+miniz_oxide = { version = "=0.7.2", features = ["compiler_builtins", "simd", "std"] }
+once_cell = { version = "1.19.0", features = ["parking_lot"] }
+regex = "1.10.4"
+reqwest = { version = "0.12.4", default-features = true, features = ["gzip", "h2", "h3", "stream", "trust-dns", "zstd"] }
+scraper = "0.19.0"
+serde = { version = "1.0.199", features = ["derive"] }
+serde_json = "1.0.116"
+tokio = { version = "1.37.0", features = ["full"] }
